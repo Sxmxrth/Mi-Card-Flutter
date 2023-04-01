@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -37,7 +37,50 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 2.5,
                       color: Colors.teal[100],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                    width: 150.0,
+                    child: Divider(
+                      color: Colors.teal.shade100,
+                    ),
+                  ),
+                  Card(
+                      color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                          horizontal: 35.0, vertical: 12.0),
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.phone,
+                          size: 25.0,
+                          color: Colors.teal,
+                        ),
+                        title: Text(
+                          "+91 9167713790",
+                          style: TextStyle(
+                              color: Colors.teal.shade900,
+                              fontFamily: 'Source Sans Pro',
+                              fontSize: 20.0),
+                        ),
+                      )),
+                  Card(
+                      margin: EdgeInsets.symmetric(
+                          vertical: 12.0, horizontal: 35.0),
+                      color: Colors.white,
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.email,
+                          size: 25.0,
+                          color: Colors.teal,
+                        ),
+                        title: Text(
+                          "samarth@gmail.com",
+                          style: TextStyle(
+                              color: Colors.teal.shade900,
+                              fontFamily: "Source Sans Pro",
+                              fontSize: 20.0),
+                        ),
+                      ))
                 ],
               ),
             )));
