@@ -8,10 +8,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.blue,
-        body: Container(),
+        home: Scaffold(
+      backgroundColor: Colors.teal,
+      body: SafeArea(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage("images/profile.jpg"),
+              ),
+            ],
+          ),
+        ]),
       ),
-    );
+    ));
   }
 }
